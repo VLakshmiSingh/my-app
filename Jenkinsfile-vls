@@ -1,10 +1,10 @@
 node{
     stage('SCM Checkout'){
-		git 'https://github.com/VLakshmiSingh/my-app.git'
+		git branch:'main', url:'https://github.com/VLakshmiSingh/my-app.git'
 	}
 	stage('Compile-Package'){
-                //Get Maven Home path
-                def mvnhome = tool name: 'M2_HOME', type: 'maven'
-		sh "${mvmhome}/bin/mvn package"
+           //Get Maven Home path
+           def mvnhome = tool name: 'M2_HOME', type: 'maven'
+	   sh "${mvnhome}/bin/mvn package"
 	}
 }
