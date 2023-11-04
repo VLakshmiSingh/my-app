@@ -1,5 +1,5 @@
 node{
-    stage('Git Checkout'){
+    stage('SCM Checkout'){
 		git credentialsId: 'github', 
 		    url: 'https://github.com/javahometech/my-app',
 			branch: "${params.gitBranch}"
