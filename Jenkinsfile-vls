@@ -5,7 +5,7 @@ node{
 			branch: "${params.gitBranch}"
 	}
 	
-	stage('Maven Build'){
+	stage('Compile-Package'){
 		sh 'mvn clean package'
 	}
 }
