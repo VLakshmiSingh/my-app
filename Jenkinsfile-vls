@@ -1,6 +1,6 @@
 node{
     stage('SCM Checkout'){
-		git branch:'main', url:'https://github.com/VLakshmiSingh/my-app.git'
+		git branch:'master', url:'https://github.com/VLakshmiSingh/my-app.git'
 	}
 	stage('Compile-Package'){
            //Get Maven Home path
